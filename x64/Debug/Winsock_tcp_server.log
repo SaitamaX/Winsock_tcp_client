@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  Winsock_tcp_server.cpp
+c:\users\jlurobot\documents\visual studio 2015\projects\winsock_tcp_server\winsock_tcp_server\winsock_tcp_server.cpp(33): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: 参见“inet_ntoa”的声明
+c:\users\jlurobot\documents\visual studio 2015\projects\winsock_tcp_server\winsock_tcp_server\winsock_tcp_server.cpp(38): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: 参见“inet_ntoa”的声明
+c:\users\jlurobot\documents\visual studio 2015\projects\winsock_tcp_server\winsock_tcp_server\winsock_tcp_server.cpp(157): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: 参见“inet_ntoa”的声明
+  Winsock_tcp_server.vcxproj -> C:\Users\jlurobot\Documents\Visual Studio 2015\Projects\Winsock_tcp_server\x64\Debug\Winsock_tcp_server.exe
+  Winsock_tcp_server.vcxproj -> C:\Users\jlurobot\Documents\Visual Studio 2015\Projects\Winsock_tcp_server\x64\Debug\Winsock_tcp_server.pdb (Full PDB)
