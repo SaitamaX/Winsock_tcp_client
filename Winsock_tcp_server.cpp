@@ -6,6 +6,7 @@
 #include <WinSock2.h>
 #include <vector>
 #include <string>
+
 #pragma comment(lib,"ws2_32.lib")
 
 #define MAXCLIENT 40//允许的最大客户端数目
@@ -78,6 +79,10 @@ void ProcessGetKeyIn()
 		}
 	}
 }
+
+//wchar_t ToUnicode(char * szSource, int nEncoding) {
+//
+//}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -169,9 +174,8 @@ int _tmain(int argc, _TCHAR* argv[])
 									 );
 									 sprintf_s()是sprintf()的安全版本，通过指定缓冲区长度来避免sprintf()存在的溢出风险
 									 */
-			sprintf_s(sendBuf, "%s 已连接", inet_ntoa(addrCli.sin_addr));
+			sprintf_s(sendBuf, "#0$%s$Connected#", inet_ntoa(addrCli.sin_addr));
 			cout << sendBuf << endl;//将该客户端已连接的消息打印到服务器端的控制台
-
 			for (int i = 0; i <= iClient; i++) {
 				send(saCli[i].socket, sendBuf, sizeof(sendBuf), 0);//将该客户端已连接的消息发送给每一个客户端（包括该客户端自身）
 			}
